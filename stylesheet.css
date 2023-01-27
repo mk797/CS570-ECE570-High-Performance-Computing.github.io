@@ -58,13 +58,15 @@ header {
 /* Main content styles */
 
 .section-container {
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 100%;
+    width: 90%;
 }
-section {
+
+.section-container {
     background-color: #3d3635;
     padding: 20px 0;
 }
