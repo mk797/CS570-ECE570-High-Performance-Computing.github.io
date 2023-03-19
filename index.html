@@ -1,119 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet.css">
-    <title>Survey on GPU Accelerators</title>
+    <title>Project Report</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
+
 <body>
-    <header style="background-color:#e2bcbc"  >
-        <div class="header-container" >
-            <h2 class="logo">
-                <a href=""  style="color:#1a1b1f;">CS/ECE 570 <br>Survey on GPU Accelerators</a>
-            </h2>
-            <h3 class="tagline" >Winter 2023 — Oregon State University</h3>
-        </div>
-        <div class="nav-container" >
-            <nav class="nav primary-nav"  style="color:#1a1b1f !important">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="TeamMembers.html">Team Members</a></li>
-                    <li><a href="https://github.com/mk797/barmahimani.github.io/blob/main/MID%20Report.pdf">Mid Report</a></li>
-                    <li><a href="full-report.html">Full Report</a></li>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="#">Project Report</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#introduction">Introduction</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#background">GPU Accelerator Background</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#literature-review">Literature Review</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#methodology">Methodology</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#architecture">Architecture</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#results">Results</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#conclusion">Conclusion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#references">References</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mid-report.html" target="_blank">Mid Report</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Reports
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="mid-report.pdf" target="_blank">Mid Report</a>
+                            <a class="dropdown-item" href="full-report.pdf" target="_blank">Full Report</a>
+                        </div>
+                    </li>
+
+
                 </ul>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </header>
-
-    <section>
-        <div class="section-container">
-            <article>
-                <h2>Introduction</h2>
-                <p>
-                    Due to the massively parallel processing capabilities of these specialized processors, GPU accelerators have grown in popularity in recent years. Numerous computer applications, such as machine learning, deep learning, scientific simulations, data analytics, and general-purpose processing, can benefit significantly from GPU acceleration.The capacity to accelerate the processing of massive amounts of data is one of the primary reasons for utilizing GPU accelerators. This is crucial for machine learning and deep learning applications because these techniques train massive neural networks by analyzing lots of data. GPU accelerators can dramatically accelerate the learning process, enabling the creation and deployment of machine learning models more quickly.The capacity of GPU accelerators to carry out complex simulations with a high degree of accuracy and realism is another reason to use them. In order to describe complicated physical systems, scientific simulations like molecular dynamics, fluid dynamics, and computational fluid dynamics need to process a lot of data. These simulations can be considerably accelerated by GPU accelerators, allowing for quicker scientific research innovation and discovery.
-                </p>
-                <p>
-                    Additionally, general-purpose processing and data analysis can both be accelerated by GPU accelerators. The ability to analyze data fast and effectively is vital because of the rising volume of data being produced nowadays. GPU accelerators may significantly speed up general-purpose computation and data analytics, enabling quicker insights and decision-making.Another motive is the ability to bring GPU power to the network edge, enabling low latency and high bandwidth processing. This is accomplished by using GPU accelerators in edge computing. This creates new opportunities for a variety of applications, including automated factories, smart cities, and self-driving cars.Overall, the use of GPU accelerators has the potential to significantly speed up a variety of computing tasks, allowing for the quicker and more effective processing of large amounts of data and opening up new perspectives and scientific discoveries in data analytics, general-purpose computation, and scientific research.
-                </p>
-
-                <h2>GPU Accelerator Background</h2>
-                <p>
-                    The background section of report on GPU accelerators should provide an overview of the history, development, and current state of GPU accelerators.<h4>The origins of GPU accelerators </h4>The use of graphics processing units (GPUs) for general-purpose computation dates back to the early 2000s, when researchers first began to explore the idea of using the massive parallel processing capabilities of GPUs for tasks beyond computer graphics. The development of GPU accelerators: Over the years, the capabilities of GPUs have continued to evolve, with hardware manufacturers developing specialized GPU accelerators that are optimized for a wide range of computing applications.The  <h4>current state of GPU accelerators</h4> Today, GPU accelerators are widely used in a variety of fields, including machine learning, deep learning, scientific simulations, data analytics, and general-purpose computation. The use of GPU accelerators is becoming increasingly popular due to the massive parallel processing capabilities of these specialized processors.                <h4>Advancement in GPU accelerators</h4> Advancements in deep learning and AI have also led to the development of more sophisticated GPU accelerators that are specifically designed for deep learning tasks, such as NVIDIA's Tesla V100 and A100.
-               
-                    <h4>GPU accelerators in the current High-Performance Computing market</h4> GPU accelerators have become an integral part of High-Performance Computing market, and are being used to accelerate a wide range of applications, including simulations, data analytics, and machine learning.
-                    <h4>GPU accelerators in Edge computing
-                    </h4>With the increasing amount of data being generated, the ability to process this data quickly and efficiently is becoming increasingly important. GPU accelerators can provide significant speed-ups for data analytics and general-purpose computation, allowing for faster insights and decision making. With the advent of edge computing, the use of GPU accelerators in edge devices is becoming increasingly popular.
-                </p>
-                
-
-                 <h2>Literature Review</h2>
-
-                 <h3>3.1 Accelerating High Performance Computing Applications Using GPUs</h3>
-                                    <p>
-                                        Due to their programmable data parallel computing architectural technology, GPUs are incredibly effective computational devices, and their speed and performance can be quicker than CPUs. In the past, GPUs were only used for graphics processing; however, they are now increasingly frequently employed in non-graphic applications, such as High performance computing applications. 
-                                   AMD’s FireStream 9370 GPU and NVIDIA Tesla M2090 GPU are the latest GPUs associated with high performance computing. High-performance floating-point performance is provided by AMD FireStream GPUs across a variety of computer workloads. The demanding performance and reliability standards of High-performance computing clusters, which grow up to thousands of nodes, are addressed in their design. The NVIDIA Tesla M-class GPUs were created with parallezation in mind. They are built on CUDA technology, often known as Fermi.The Fermi architecture is implemented with three billion transistors and up to 512 CUDA cores. The CUDA core is a hardware and software architecture that includes an FP unit and an entirely pipelined integer arithmetic logic unit. NVIDIA GPUs can run programs written in C, C++, Fortran, OpenCL, DirectCompute</p>
-                 <h3>3.2 GPU Resource Sharing and Virtualization on High Performance Computing 
-Systems</h3>
-                <p>
-                    Desktop virtualization is a popular technology that enables users to access their desktops from any location, regardless of the physical location of the desktop hardware. However, the performance of desktop virtualization can be limited due to the lack of dedicated hardware resources, such as graphics processing units (GPUs), which are essential for running graphics-intensive applications. In this paper, we explore the use of GPU-accelerated desktop virtualization, which leverages dedicated GPU resources to improve the performance of virtualized desktop environments.
-The hardware and software configuration used in our experiments included one physical machine with two Intel(R) Xean(R) CPU E5-2650 Processors with 6 cores running at 2.3GHz, 64GB of memory, and NVIDIA grid K2 for our GPU. The system uses JUNO version OpenStack as the hypervisor and centos 7 with Linux 3.10 kernel as the host operating system and Windows 7 as the guest operating system. The desktop transmission protocol used was SPICE. Each virtual machine in desktop virtualization had a 2 core CPU, 2GB of memory, and 30GB of disk. The host disk redundant array was RAID 5. The HD video size was 1920 *1080.
-Several studies have explored the use of GPU-accelerated desktop virtualization in recent years. One study by Huang et al. (2015) evaluated the performance of a virtualized desktop environment with and without GPU acceleration using a suite of benchmark applications. The results showed that GPU acceleration significantly improved the performance of graphics-intensive applications, reducing the average waiting time and increasing system throughput.
-                </p>
-                <p>
-                    Similarly, another study by Liu et al. (2018) explored the use of GPU-accelerated desktop virtualization for running deep learning applications. The study evaluated the performance of the virtualized environment using several deep learning benchmarks and showed that GPU acceleration significantly improved the performance of the virtualized environment, reducing the training time and increasing the accuracy of the model.
-                    Another study by Yuan et al. (2019) explored the use of GPU-accelerated desktop virtualization for running virtual reality (VR) applications. The study evaluated the performance of a virtualized VR environment using several benchmark applications and showed that GPU acceleration significantly improved the performance of the virtualized environment, reducing the latency and increasing the frame rate of the application.
-                    Overall, these studies demonstrate the effectiveness of GPU-accelerated desktop virtualization for improving the performance of virtualized environments. However, further research is needed to explore the use of different GPU architectures and virtualization technologies to optimize the performance of GPU-accelerated virtualized environments.
-                    In conclusion, GPU-accelerated desktop virtualization is an effective approach to improve the performance of virtualized environments, particularly for running graphics-intensive applications. Further research is needed to optimize the use of different GPU architectures and virtualization technologies to maximize the performance of GPU-accelerated virtualized environments.
-                </p>
-                 <h3>3.3 GPU acceleration for the web browser based 
-evolutionary computing system</h3>
-                <p>
-                    Grid and cloud computing have become more and more popular alternatives to very expensive supercomputers or dedicated computing clusters because of their ability to utilize heterogeneous machines with different internal architectures. The proposed distributed evolutionary computing system [1] only uses client CPU resources because GPU had no participation in web pages yet. However, in 2011, WebCL, a new technology that enables web developers to harness the power of GPUs through web browsers, was launched with the aim of providing an OpenCL API for JavaScript code that could be run in a web page context. The introduction of GPGPU programming platforms like Compute Unified Device Architecture (CUDA) or Open Computing Language has also made it feasible for GPUs to be extensively used for computing purposes. A distributed computing system's core aspect is an evolutionary algorithm, which acts on a population of solutions that are parallelized almost naturally. The global parallelization model, the master-slave model, and the island model are the three basic architectures in EA. The proposed system [2] deals with optimization problems like the traveling salesperson problem (TPS) and flowshop scheduling problem (FSP) and local search heuristics with a single solution such as a variable neighborhood search (VNS) or an iterative local search (ILS). The GPU kernel computes local heuristics and transfers evaluation algorithms from JS code to the OpenCL kernel. Thus, it is reported [2] that the execution of the above algorithms can be reduced by up to 50% due to the inclusion of GPUs in evolutionary algorithm-based distributed systems.
-                </p>
-                
-
-                <h2>Timeline:</h2>
-
-                <p><h3>Week-3:</h3> Motivation, Background work on GPU accelerators</p>
-                <p><h3>Week-4 to 5:</h3>Literature survey on the use of GPU accelerators in different fields such as machine learning, scientific simulations, data analytics, and general-purpose computation, as well as the latest developments and trends in the field.</p>
-                <p><h3>Week-6 to 7:</h3>Collect data on the costs and performance of different GPU accelerator products, including hardware and software, and compare them to alternatives such as CPU-based computing.</p>
-                <p><h3>Week-8 to 9:</h3> Analyze the data collected from the literature review and survey, and draw conclusions about the current state of GPU accelerators and their applications.
-                    Write up the report, including an introduction, background, methodology, results, and conclusion sections.
-                    </p>
-                <p><h3>Week-10:</h3> Prepare presentation</p>
-
-                
-
-                <h2>References:</h2>
-                <p> [1]	&nbsp; Duda, and W. Dlubacz, “Distributed Evolutionary Computing System Based on Web Browsers with JavaScript”, Applied Parallel and Scientific Computing, Lecture Notes in &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computer Science, vol. 7782, 2013, pp 183-191</p>
-
-               
-
-
-
-
-                <p>[2] &nbsp;	J. Duda, and W. Dlubacz, “GPU acceleration for the web browser based evolutionary computing system”, Applied Parallel and Scientific Computing, IEEE, 2013.</p>
-                <p>[3] &nbsp;	Sainbayar Sukhbaatar, Jason R. Mitchell, and Rob Fergus ,"A Survey of GPU-Accelerated High-Performance Computing for Deep Learning".</p>
-                <p>[4] &nbsp;	Hao Li, Roger Grosse, "Accelerating Deep Neural Networks on GPUs".</p>
-                <p>[5]	&nbsp; Li Du,Yuan Du, "Hardware Accelerator Design for Machine Learning".
-                </p>
-                <p>[6]	&nbsp; Teng Li, Vikram K. Narayana, Esam El-Araby, Tarek El-Ghazawi, “GPU Resource Sharing and Virtualization on High Performance Computing Systems”, International &emsp; Conference on Parallel Processing, 2011.</p>
-                <p>[7]&nbsp;	Yaser Jararweh, Shadi AlZubi, Salim Hariri, “An Optimal Multi-Processor Allocation Algorithm for High Performance GPU Accelerators”, IEEE Jordan Conference on Applied Electrical Engineering and Computing Technologies,2011.</p>
-                <p>[8]&nbsp;	Bin Liu, Dawid Zydek, Henry Selvaraj, Laxmi Gewali, “Accelerating High Performance Computing Applications Using CPUs, GPUs, Hybrid CPU/GPU, and FPGAs”, 13th International Conference on Parallel and Distributed Computing, Applications and Technologies, 2012.
-                </p>
-                <p>[9]	&nbsp;Tergel Molom-Ochir, Rohan Shenoy, “Energy and Cost Considerations for GPU Accelerated AI Inference Workloads”, IEEE Jordan Conference on Applied Electrical Engineering and Computing Technologies, 2011.
-                </p>
-                
-            </article>
+    <main>
+        <div class="container container-full-height">
+            <div class="row row-full-height">
+                <div class="col text-center">
+                    <h1 class="main-title">SURVEY ON GPU ACCELERATORS</h1>
+                    <h3 class="main-heading">HPCA ECE/CS 570</h3>
+                    <h4 class="team-title">Team Members</h4>
+                    <p>Bharath Kumar Reddy Gangavaram (ECE)</p>
+                    <p>Mahendra Kumar Kodidala (ECE)</p>
+                    <p>Manikanta Ranganath (CS)</p>
+                    
+                </div>
+            </div>
         </div>
-    </section>
 
+        <section id="introduction" class="section-padding">
+            <h2>Introduction</h2>
+            <p>Due to the massively parallel processing capabilities of these specialized processors, GPU accelerators
+                have grown in popularity in recent years. Numerous computer applications, such as machine learning, deep
+                learning, scientific simulations, data analytics, and general-purpose processing, can benefit
+                significantly from GPU acceleration.The capacity to accelerate the processing of massive amounts of data
+                is one of the primary reasons for utilizing GPU accelerators. This is crucial for machine learning and
+                deep learning applications because these techniques train massive neural networks by analyzing lots of
+                data. GPU accelerators can dramatically accelerate the learning process, enabling the creation and
+                deployment of machine learning models more quickly.The capacity of GPU accelerators to carry out complex
+                simulations with a high degree of accuracy and realism is another reason to use them. In order to
+                describe complicated physical systems, scientific simulations like molecular dynamics, fluid dynamics,
+                and computational fluid dynamics need to process a lot of data. These simulations can be considerably
+                accelerated by GPU accelerators, allowing for quicker scientific research innovation and discovery.</p>
+            <p>Additionally, general-purpose processing and data analysis can both be accelerated by GPU accelerators.
+                The ability to analyze data fast and effectively is vital because of the rising volume of data being
+                produced nowadays. GPU accelerators may significantly speed up general-purpose computation and data
+                analytics, enabling quicker insights and decision-making.Another motive is the ability to bring GPU
+                power to the network edge, enabling low latency and high bandwidth processing. This is accomplished by
+                using GPU accelerators in edge computing. This creates new opportunities for a variety of applications,
+                including automated factories, smart cities, and self-driving cars.Overall, the use of GPU accelerators
+                has the potential to significantly speed up a variety of computing tasks, allowing for the quicker and
+                more effective processing of large amounts of data and opening up new perspectives and scientific
+                discoveries in data analytics, general-purpose computation, and scientific research.</p>
+        </section>
+        <section id="background" class="section-padding">
+            <h2>GPU Accelerator Background</h2>
+            <p>The background section of report on GPU accelerators should provide an overview of the history,
+                development, and current state of GPU accelerators.</p>
+            <h4>The origins of GPU accelerators</h4>
+            <p>The use of graphics processing units (GPUs) for general-purpose computation dates back to the early
+                2000s, when researchers first began to explore the idea of using the massive parallel processing
+                capabilities of GPUs for tasks beyond computer graphics. The development of GPU accelerators: Over the
+                years, the capabilities of GPUs have continued to evolve, with hardware manufacturers developing
+                specialized GPU accelerators that are optimized for a wide range of computing applications.</p>
+            <h4>current state of GPU accelerators</h4>
+            <p>Today, GPU accelerators are widely used in a variety of fields, including machine learning, deep
+                learning, scientific simulations, data analytics, and general-purpose computation. The use of GPU
+                accelerators is becoming increasingly popular due to the massive parallel processing capabilities of
+                these specialized processors</p>
+            <h4>Advancement in GPU accelerators</h4>
+            <p>Advancements in deep learning and AI have also led to the development of more sophisticated GPU
+                accelerators that are specifically designed for deep learning tasks, such as NVIDIA's Tesla V100 and
+                A100.
+            </p>
+            <h4>GPU accelerators in the current High-Performance Computing market
+            </h4>
+            <p>GPU accelerators have become an integral part of High-Performance Computing market, and are being used to
+                accelerate a wide range of applications, including simulations, data analytics, and machine learning.
+            </p>
+            <h4>GPU accelerators in Edge computing
+            </h4>
+            <p>With the increasing amount of data being generated, the ability to process this data quickly and
+                efficiently is becoming increasingly important. GPU accelerators can provide significant speed-ups for
+                data analytics and general-purpose computation, allowing for faster insights and decision making. With
+                the advent of edge computing, the use of GPU accelerators in edge devices is becoming increasingly
+                popular.
+            </p>
+        </section>
+        <section id="literature-review" class="section-padding">
+            <h2>Literature Review</h2>
+            <h5>3.1 Accelerating High Performance Computing Applications Using GPUs
+            </h5>
+            <p>Due to their programmable data parallel computing architectural technology, GPUs are incredibly effective
+                computational devices, and their speed and performance can be quicker than CPUs. In the past, GPUs were
+                only used for graphics processing; however, they are now increasingly frequently employed in non-graphic
+                applications, such as High performance computing applications. AMD’s FireStream 9370 GPU and NVIDIA
+                Tesla M2090 GPU are the latest GPUs associated with high performance computing. High-performance
+                floating-point performance is provided by AMD FireStream GPUs across a variety of computer workloads.
+                The demanding performance and reliability standards of High-performance computing clusters, which grow
+                up to thousands of nodes, are addressed in their design. The NVIDIA Tesla M-class GPUs were created with
+                parallezation in mind. They are built on CUDA technology, often known as Fermi.The Fermi architecture is
+                implemented with three billion transistors and up to 512 CUDA cores. The CUDA core is a hardware and
+                software architecture that includes an FP unit and an entirely pipelined integer arithmetic logic unit.
+                NVIDIA GPUs can run programs written in C, C++, Fortran, OpenCL, DirectCompute
+
+            </p>
+            <h5>3.2 GPU Resource Sharing and Virtualization on High Performance Computing Systems
+            </h5>
+            <p>Desktop virtualization is a popular technology that enables users to access their desktops from any
+                location, regardless of the physical location of the desktop hardware. However, the performance of
+                desktop virtualization can be limited due to the lack of dedicated hardware resources, such as graphics
+                processing units (GPUs), which are essential for running graphics-intensive applications. In this paper,
+                we explore the use of GPU-accelerated desktop virtualization, which leverages dedicated GPU resources to
+                improve the performance of virtualized desktop environments. The hardware and software configuration
+                used in our experiments included one physical machine with two Intel(R) Xean(R) CPU E5-2650 Processors
+                with 6 cores running at 2.3GHz, 64GB of memory, and NVIDIA grid K2 for our GPU. The system uses JUNO
+                version OpenStack as the hypervisor and centos 7 with Linux 3.10 kernel as the host operating system and
+                Windows 7 as the guest operating system. The desktop transmission protocol used was SPICE. Each virtual
+                machine in desktop virtualization had a 2 core CPU, 2GB of memory, and 30GB of disk. The host disk
+                redundant array was RAID 5. The HD video size was 1920 *1080. Several studies have explored the use of
+                GPU-accelerated desktop virtualization in recent years. One study by Huang et al. (2015) evaluated the
+                performance of a virtualized desktop environment with and without GPU acceleration using a suite of
+                benchmark applications. The results showed that GPU acceleration significantly improved the performance
+                of graphics-intensive applications, reducing the average waiting time and increasing system throughput.
+
+            </p>
+            <p>Similarly, another study by Liu et al. (2018) explored the use of GPU-accelerated desktop virtualization
+                for running deep learning applications. The study evaluated the performance of the virtualized
+                environment using several deep learning benchmarks and showed that GPU acceleration significantly
+                improved the performance of the virtualized environment, reducing the training time and increasing the
+                accuracy of the model. Another study by Yuan et al. (2019) explored the use of GPU-accelerated desktop
+                virtualization for running virtual reality (VR) applications. The study evaluated the performance of a
+                virtualized VR environment using several benchmark applications and showed that GPU acceleration
+                significantly improved the performance of the virtualized environment, reducing the latency and
+                increasing the frame rate of the application. Overall, these studies demonstrate the effectiveness of
+                GPU-accelerated desktop virtualization for improving the performance of virtualized environments.
+                However, further research is needed to explore the use of different GPU architectures and virtualization
+                technologies to optimize the performance of GPU-accelerated virtualized environments. In conclusion,
+                GPU-accelerated desktop virtualization is an effective approach to improve the performance of
+                virtualized environments, particularly for running graphics-intensive applications. Further research is
+                needed to optimize the use of different GPU architectures and virtualization technologies to maximize
+                the performance of GPU-accelerated virtualized environments.
+
+            </p>
+            <h5>3.3 GPU acceleration for the web browser based evolutionary computing system
+            </h5>
+            <p>Grid and cloud computing have become more and more popular alternatives to very expensive supercomputers
+                or dedicated computing clusters because of their ability to utilize heterogeneous machines with
+                different internal architectures. The proposed distributed evolutionary computing system [1] only uses
+                client CPU resources because GPU had no participation in web pages yet. However, in 2011, WebCL, a new
+                technology that enables web developers to harness the power of GPUs through web browsers, was launched
+                with the aim of providing an OpenCL API for JavaScript code that could be run in a web page context. The
+                introduction of GPGPU programming platforms like Compute Unified Device Architecture (CUDA) or Open
+                Computing Language has also made it feasible for GPUs to be extensively used for computing purposes. A
+                distributed computing system's core aspect is an evolutionary algorithm, which acts on a population of
+                solutions that are parallelized almost naturally. The global parallelization model, the master-slave
+                model, and the island model are the three basic architectures in EA. The proposed system [2] deals with
+                optimization problems like the traveling salesperson problem (TPS) and flowshop scheduling problem (FSP)
+                and local search heuristics with a single solution such as a variable neighborhood search (VNS) or an
+                iterative local search (ILS). The GPU kernel computes local heuristics and transfers evaluation
+                algorithms from JS code to the OpenCL kernel. Thus, it is reported [2] that the execution of the above
+                algorithms can be reduced by up to 50% due to the inclusion of GPUs in evolutionary algorithm-based
+                distributed systems.
+
+            </p>
+        </section>
+        <section id="methodology" class="section-padding">
+            <h2>Methodology</h2>
+            <p>Your methodology content goes here.</p>
+        </section>
+        <section id="architecture" class="section-padding">
+            <h2>Architecture</h2>
+            <p>Your methodology content goes here.</p>
+        </section>
+        <section id="results" class="section-padding">
+            <h2>Results</h2>
+            <p>Your results content goes here.</p>
+        </section>
+        <section id="conclusion" class="section-padding">
+            <h2>Conclusion</h2>
+            <p>Your conclusion content goes here.</p>
+        </section>
+
+        <section id="references" class="section-padding">
+            <h2>References</h2>
+            <p> [1] &nbsp; Duda, and W. Dlubacz, “Distributed Evolutionary Computing System Based on Web Browsers with
+                JavaScript”, Applied Parallel and Scientific Computing, Lecture Notes in
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computer Science, vol. 7782, 2013, pp 183-191</p>
+
+
+            <p>[2] &nbsp; J. Duda, and W. Dlubacz, “GPU acceleration for the web browser based evolutionary computing
+                system”, Applied Parallel and Scientific Computing, IEEE, 2013.</p>
+            <p>[3] &nbsp; Sainbayar Sukhbaatar, Jason R. Mitchell, and Rob Fergus ,"A Survey of GPU-Accelerated
+                High-Performance Computing for Deep Learning".</p>
+            <p>[4] &nbsp; Hao Li, Roger Grosse, "Accelerating Deep Neural Networks on GPUs".</p>
+            <p>[5] &nbsp; Li Du,Yuan Du, "Hardware Accelerator Design for Machine Learning".
+            </p>
+            <p>[6] &nbsp; Teng Li, Vikram K. Narayana, Esam El-Araby, Tarek El-Ghazawi, “GPU Resource Sharing and
+                Virtualization on High Performance Computing Systems”, International &emsp; Conference on Parallel
+                Processing, 2011.</p>
+            <p>[7]&nbsp; Yaser Jararweh, Shadi AlZubi, Salim Hariri, “An Optimal Multi-Processor Allocation Algorithm
+                for High Performance GPU Accelerators”, IEEE Jordan Conference on Applied Electrical Engineering and
+                Computing Technologies,2011.</p>
+            <p>[8]&nbsp; Bin Liu, Dawid Zydek, Henry Selvaraj, Laxmi Gewali, “Accelerating High Performance Computing
+                Applications Using CPUs, GPUs, Hybrid CPU/GPU, and FPGAs”, 13th International Conference on Parallel and
+                Distributed Computing, Applications and Technologies, 2012.
+            </p>
+            <p>[9] &nbsp;Tergel Molom-Ochir, Rohan Shenoy, “Energy and Cost Considerations for GPU Accelerated AI
+                Inference Workloads”, IEEE Jordan Conference on Applied Electrical Engineering and Computing
+                Technologies, 2011.
+            </p>
+            </p>
+        </section>
+    </main>
     <footer>
-        <div class="footer-container">
-            <p>Copyright © 2023 | CS/ECE 570 Final Project</p>
-        </div>
+        <p>&copy; 2023 Project Report. All rights reserved.</p>
     </footer>
+    <script src="scripts.js"></script>
 </body>
+
 </html>
