@@ -1,5 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
+    font-size: 16px;
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
@@ -40,6 +41,12 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
+
+h1, h2, h3,  h5, h6 {
+    font-weight: bold;
+}
+
+
 .section-padding {
     padding-top: 100px;
     padding-bottom: 50px;
@@ -54,6 +61,11 @@ header {
     background-color: #2d2d2d;
 
 }
+
+.navbar-default {
+    background-color: #7CA298;
+}
+
 
 .navbar-brand,
 .nav-item a {

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Report</title>
+    <title>ECE570 Report</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -14,8 +14,9 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-            <a class="navbar-brand" href="#">Project Report</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top"
+            style="background-color: #DFE9CA !important;">
+            <a class="navbar-brand" href="#">CS/ECE570 Report</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -26,28 +27,20 @@
                         <a class="nav-link" href="#introduction">Introduction</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#background">GPU Accelerator Background</a>
+                        <a class="nav-link" href="#architecture">GPU Architecture</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#literature-review">Literature Review</a>
+                        <a class="nav-link" href="#latest-gpu">Latest GPU</a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link" href="#methodology">Methodology</a>
+                        <a class="nav-link" href="#case-study">Case Study</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#architecture">Architecture</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#results">Results</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#conclusion">Conclusion</a>
-                    </li>
+
+
+
                     <li class="nav-item">
                         <a class="nav-link" href="#references">References</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="mid-report.html" target="_blank">Mid Report</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -55,8 +48,8 @@
                             Reports
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="mid-report.pdf" target="_blank">Mid Report</a>
-                            <a class="dropdown-item" href="full-report.pdf" target="_blank">Full Report</a>
+                            <a class="dropdown-item" href="/pdf/mid Report.pdf" target="_blank">Mid Report</a>
+                            <a class="dropdown-item" href="/pdf/final REPORT.pdf" target="_blank">Full Report</a>
                         </div>
                     </li>
 
@@ -70,300 +63,491 @@
             <div class="row row-full-height">
                 <div class="col text-center">
                     <h1 class="main-title">SURVEY ON GPU ACCELERATORS</h1>
-                    <h3 class="main-heading">HPCA ECE/CS 570</h3>
+                    <h3 class="main-heading">HPCA CS/ECE 570</h3>
                     <h4 class="team-title">Team Members</h4>
                     <p>Bharath Kumar Reddy Gangavaram (ECE)</p>
                     <p>Mahendra Kumar Kodidala (ECE)</p>
                     <p>Manikanta Ranganath (CS)</p>
-                    
+
                 </div>
             </div>
         </div>
 
         <section id="introduction" class="section-padding">
             <h2>Introduction</h2>
-            <p>Due to the massively parallel processing capabilities of these specialized processors, GPU accelerators
-                have grown in popularity in recent years. Numerous computer applications, such as machine learning, deep
-                learning, scientific simulations, data analytics, and general-purpose processing, can benefit
-                significantly from GPU acceleration.The capacity to accelerate the processing of massive amounts of data
-                is one of the primary reasons for utilizing GPU accelerators. This is crucial for machine learning and
-                deep learning applications because these techniques train massive neural networks by analyzing lots of
-                data. GPU accelerators can dramatically accelerate the learning process, enabling the creation and
-                deployment of machine learning models more quickly.The capacity of GPU accelerators to carry out complex
-                simulations with a high degree of accuracy and realism is another reason to use them. In order to
-                describe complicated physical systems, scientific simulations like molecular dynamics, fluid dynamics,
-                and computational fluid dynamics need to process a lot of data. These simulations can be considerably
-                accelerated by GPU accelerators, allowing for quicker scientific research innovation and discovery.</p>
-            <p>Additionally, general-purpose processing and data analysis can both be accelerated by GPU accelerators.
-                The ability to analyze data fast and effectively is vital because of the rising volume of data being
-                produced nowadays. GPU accelerators may significantly speed up general-purpose computation and data
-                analytics, enabling quicker insights and decision-making.Another motive is the ability to bring GPU
-                power to the network edge, enabling low latency and high bandwidth processing. This is accomplished by
-                using GPU accelerators in edge computing. This creates new opportunities for a variety of applications,
-                including automated factories, smart cities, and self-driving cars.Overall, the use of GPU accelerators
-                has the potential to significantly speed up a variety of computing tasks, allowing for the quicker and
-                more effective processing of large amounts of data and opening up new perspectives and scientific
-                discoveries in data analytics, general-purpose computation, and scientific research.</p>
-        </section>
-        <section id="background" class="section-padding">
-            <h2>GPU Accelerator Background</h2>
-            <p>The background section of report on GPU accelerators should provide an overview of the history,
-                development, and current state of GPU accelerators.</p>
-            <h4>The origins of GPU accelerators</h4>
-            <p>The use of graphics processing units (GPUs) for general-purpose computation dates back to the early
-                2000s, when researchers first began to explore the idea of using the massive parallel processing
-                capabilities of GPUs for tasks beyond computer graphics. The development of GPU accelerators: Over the
-                years, the capabilities of GPUs have continued to evolve, with hardware manufacturers developing
-                specialized GPU accelerators that are optimized for a wide range of computing applications.</p>
-            <h4>current state of GPU accelerators</h4>
-            <p>Today, GPU accelerators are widely used in a variety of fields, including machine learning, deep
-                learning, scientific simulations, data analytics, and general-purpose computation. The use of GPU
-                accelerators is becoming increasingly popular due to the massive parallel processing capabilities of
-                these specialized processors</p>
-            <h4>Advancement in GPU accelerators</h4>
-            <p>Advancements in deep learning and AI have also led to the development of more sophisticated GPU
-                accelerators that are specifically designed for deep learning tasks, such as NVIDIA's Tesla V100 and
-                A100.
+            <p>The rapid evolution of technology has witnessed remarkable developments in processing power,
+                significantly shaping various industries and applications. Graphics Processing Units (GPUs), which have
+                transformed from simple video display controllers to powerful parallel processing powerhouses, are at
+                the forefront of this revolution. This article provides a comprehensive overview of the history and
+                evolution of GPUs, their architectural components, and their diverse applications. The article discusses
+                the intricacies of GPU architectures like Nvidia's GTX 980 and the advancements offered by A100 and H100
+                GPU accelerators, which cater to artificial intelligence, high-performance computing, and data
+                analytics. Furthermore, we explore the impact of GPU acceleration on distributed computing systems like
+                Apache Spark, highlighting the performance boost they offer in machine learning tasks. </p>
+            <h3>1.1 GPU Accelerators </h3>
+            <p>A GPU, or graphics processing unit, is a specialized processor composed of numerous cores tailored to
+                efficiently process large batches of data by performing identical operations repeatedly at high speeds.
+                By leveraging parallel processing, these cores work in tandem to manage thousands of threads
+                simultaneously. GPUs are a critical component of a wide range of computing devices, from personal
+                computers to smartphones. Initially, GPUs were developed to expedite the rendering of 3D graphics. As
+                their flexibility and programmability improved over time, their applications broadened to include
+                accelerated video rendering, machine learning, financial simulations and risk modeling, as well as
+                scientific computations. </p>
+            <p>GPU acceleration refers to the technique of utilizing a GPU to execute computing tasks that are
+                conventionally managed by a CPU. This involves transferring some processing responsibilities from the
+                CPU to the GPU, which excels in parallel processing and can simultaneously handle multiple tasks. By
+                harnessing the power of GPUs, users can benefit from faster processing speeds, enhanced efficiency, and
+                cost-effective solutions.</p>
+            <p>The two primary categories of GPU acceleration are Compute acceleration, that is employed for
+                general-purpose computing tasks, such as scientific computations, data analysis, and machine learning
+                and Graphics acceleration that is utilized for activities like gaming and video rendering.</p>
+            <h3>1.2 Types of GPU Accelerators </h3>
+            <h4>i. IGPU</h4>
+            <img src="/img/1.png" alt="IGPU"
+                style="display: block; margin-left: auto; margin-right: auto; width: auto;">
+            <p>An integrated GPU, or iGPU, is a graphics processing unit that is combined with the CPU on a single chip.
+                This type of GPU is built into the motherboard and is commonly found in ultra-thin devices such as
+                laptops and Intel® NUCs. The iGPU offers several advantages, including lower power consumption, which
+                leads to reduced heat generation and potentially longer battery life. Additionally, devices with
+                integrated graphics tend to be more affordable. While iGPUs can handle light gaming and editing tasks,
+                their processing power is generally more limited compared to dedicated GPUs. Intel is among the
+                companies that manufacture CPUs with integrated graphics. The performance of iGPUs is largely dependent
+                on the capabilities of the other components within the system.</p>
+            <h4>ii. DGPU</h4>
+            <img src="/img/2.png" alt="IGPU"
+                style="display: block; margin-left: auto; margin-right: auto; width: auto;">
+            <p>Discrete graphics refers to a GPU that is separate from the processor. As an independent component,
+                discrete graphics offer several advantages, including their own dedicated VRAM (video RAM or video
+                random access memory). However, they also consume more power and generate substantial heat. Discrete
+                graphics typically provide higher performance than integrated graphics and are predominantly found in
+                desktop PCs, although some laptops and small form factor PCs may also feature discrete graphics cards.
+                These GPUs connect to the motherboard and are larger and more power-hungry than their integrated
+                counterparts. Discrete graphics are ideal for running resource-intensive graphics, effects, and videos,
+                as well as for executing high-performance tasks. NVIDIA and AMD are the leading manufacturers in the
+                discrete GPU market. </p>
+            <h3>1.3 History and Evolution of GPU</h3>
+            <p>The Graphics Processing Unit (GPU) has undergone a remarkable transformation over the past decades,
+                impacting computer graphics, parallel computing, gaming experiences, and artificial intelligence
+                applications. This article focuses the history and evolution of the GPU, from its humble beginnings as
+                simple video display controllers to today's sophisticated parallel processing powerhouses.
+                The journey of the GPU began with the development of basic video display controllers in the 1970s and
+                1980s, which primarily focused on generating video signals. It wasn't until 1994 when Sony first used
+                the term "Graphics Processing Unit" (GPU) with the release of their PlayStation console (Smith, 2015).
+                In 1999, NVIDIA launched the GeForce 256, the first GPU to combine transformation and lighting
+                calculations (T&L) into a single chip, leading to more intricate and real-time graphics rendering
+                (NVIDIA, n.d.).
+                Throughout the early 2000s, GPU technology advanced rapidly, with NVIDIA and ATI (now part of AMD)
+                competing to create increasingly powerful and efficient GPU architectures. By 2002, the concept of
+                General-Purpose computing on Graphics Processing Units (GPGPU) emerged, broadening the scope of GPUs
+                beyond graphics-related tasks. This period of growth saw NVIDIA ship 500 million GPUs by 2006 (Hruska,
+                2006). That same year, NVIDIA introduced the G80 architecture, which featured unified shaders and paved
+                the way for general-purpose GPU computing. This shift transformed GPUs from specialized graphics
+                processors into versatile parallel computing devices. The move towards general-purpose GPU computing
+                unlocked new applications beyond graphics processing. NVIDIA unveiled CUDA (Compute Unified Device
+                Architecture) in 2006, a parallel computing platform that enabled developers to use GPUs for various
+                computing tasks (NVIDIA, 2006). This innovation allowed GPUs to be applied in areas such as artificial
+                intelligence and high-performance computing (Owens et al., 2008).
+                OpenCL (Open Computing Language), launched in 2009, is an open standard for parallel programming of
+                heterogeneous systems (Khronos Group, 2009). It allows developers to leverage the computing power of
+                different hardware platforms, such as CPUs, GPUs, Digital Signal Processors (DSPs), and
+                Field-Programmable Gate Arrays (FPGAs), using a single codebase. OpenCL's flexibility makes it possible
+                for developers to optimize code for specific hardware architectures and create performance-portable
+                applications.
             </p>
-            <h4>GPU accelerators in the current High-Performance Computing market
-            </h4>
-            <p>GPU accelerators have become an integral part of High-Performance Computing market, and are being used to
-                accelerate a wide range of applications, including simulations, data analytics, and machine learning.
+            <p>Introduced in 2011, OpenACC is a high-level, directive-based programming model designed to simplify
+                parallel application development on heterogeneous systems (OpenACC, 2011). OpenACC enables developers to
+                offload compute-intensive tasks to accelerators like GPUs without extensive code modifications,
+                improving productivity and allowing them to focus on algorithms and overall application performance.
+                OpenACC is especially valuable for scientists and engineers who may not be experts in parallel
+                programming, as it abstracts the complexities of hardware-specific optimization and parallelization.
+                By 2020, many of the world's top supercomputers integrated GPU accelerators to enhance their
+                computational abilities. As highlighted by the June 2020 TOP500 list, roughly 25% of these
+                high-performance systems used GPUs for faster processing and improved energy efficiency (TOP500, 2020).
+                The inclusion of GPUs in supercomputers facilitated efficient handling of complex simulations, data
+                analysis, and artificial intelligence tasks.
+                The growing use of GPU accelerators in supercomputers demonstrates the trend towards heterogeneous
+                computing architectures, which blend different processor types for optimal performance and energy
+                efficiency (Mittal & Vetter, 2015). Due to their parallel processing capabilities, GPUs can execute
+                multiple threads simultaneously, making them ideal for accelerating a diverse range of applications in
+                science, engineering, and machine learning.
             </p>
-            <h4>GPU accelerators in Edge computing
-            </h4>
-            <p>With the increasing amount of data being generated, the ability to process this data quickly and
-                efficiently is becoming increasingly important. GPU accelerators can provide significant speed-ups for
-                data analytics and general-purpose computation, allowing for faster insights and decision making. With
-                the advent of edge computing, the use of GPU accelerators in edge devices is becoming increasingly
-                popular.
+            <h3>1.4 CPU vs GPU </h3>
+            <h4>i. Architectural differences between CPUs and GPUs </h4>
+            <p>A primary distinction between CPUs and GPUs stems from their architectural design. The CPU consists of a
+                limited number of cores equipped with substantial cache memory, allowing it to manage a few software
+                threads concurrently. These CPU cores are optimized for handling intricate operations, including data
+                transfer between local registers, various cache levels (L1, L2, and L3), RAM, and hard disk storage,
+                while efficiently switching between application tasks. CPUs are typically designed for sequential
+                processing, excelling in a broad array of tasks and emphasizing singlethreaded performance. </p>
+            <img src="/img/3.png" alt="IGPU"
+                style="display: block; margin-left: auto; margin-right: auto; width: auto;">
+            <p>Conversely, a GPU boasts a significantly larger number of cores than a CPU, enabling it to process
+                thousands of threads simultaneously. The multitude of cores in a GPU allows it to fetch data from
+                memory, conduct parallel computations, and return the data for further use. GPUs are engineered for
+                parallel processing and focus on executing multiple threads concurrently. This design makes them
+                well-suited for handling data-intensive tasks such as rendering graphics and conducting complex
+                mathematical operations. </p>
+            <h4>ii. Performance comparison in general-purpose computing </h4>
+            <p>The growing interest in using GPUs for general-purpose computing (GPGPU) has led to numerous studies
+                comparing their performance with that of traditional CPUs. GPUs can outperform CPUs in various
+                applications, such as machine learning, simulations, and data analysis, due to their ability to process
+                multiple threads simultaneously. However, it is essential to note that GPUs may not always be the
+                optimal choice for all applications, as some tasks may not be well-suited for parallel execution or may
+                require specific instruction sets that are better supported by CPUs. The performance of GPUs is
+                calculated in terms of FLOPS (Floating Point Operations
+                Per Second).
+                According to study by Yifan Sun, Nicolas Bohm Agostini, Shi Dong, and David Kaeli, the performance of
+                GPUs is exponentially increasing and the FLOPS per watt doubles around every three to four years.
             </p>
-        </section>
-        <section id="literature-review" class="section-padding">
-            <h2>Literature Review</h2>
-            <h5>3.1 Accelerating High Performance Computing Applications Using GPUs
-            </h5>
-            <p>Due to their programmable data parallel computing architectural technology, GPUs are incredibly effective
-                computational devices, and their speed and performance can be quicker than CPUs. In the past, GPUs were
-                only used for graphics processing; however, they are now increasingly frequently employed in non-graphic
-                applications, such as High performance computing applications. AMD’s FireStream 9370 GPU and NVIDIA
-                Tesla M2090 GPU are the latest GPUs associated with high performance computing. High-performance
-                floating-point performance is provided by AMD FireStream GPUs across a variety of computer workloads.
-                The demanding performance and reliability standards of High-performance computing clusters, which grow
-                up to thousands of nodes, are addressed in their design. The NVIDIA Tesla M-class GPUs were created with
-                parallezation in mind. They are built on CUDA technology, often known as Fermi.The Fermi architecture is
-                implemented with three billion transistors and up to 512 CUDA cores. The CUDA core is a hardware and
-                software architecture that includes an FP unit and an entirely pipelined integer arithmetic logic unit.
-                NVIDIA GPUs can run programs written in C, C++, Fortran, OpenCL, DirectCompute
+            <img src="/img/4.png" alt="IGPU"
+                style="display: block; margin-left: auto; margin-right: auto; width: auto;">
+            <h4>iii. Energy efficiency considerations </h4>
+            <p>CPUs generally consume more power to achieve their goals, especially when handling diverse tasks.
+                However, for parallelizable tasks, CPUs may not be the most energy-efficient choice due to their limited
+                number of cores and sequential processing approach. On the other hand, GPUs can execute these tasks with
+                lower energy consumption per operation than CPUs, thanks to their architecture, which is specifically
+                designed for the concurrent execution of thousands of threads. Nevertheless, when dealing with workloads
+                that are not parallelizable, GPUs may use more energy without delivering a corresponding increase in
+                performance.
 
+                A study by Yifan Sun, Nicolas Bohm Agostini, Shi Dong, and David Kaeli demonstrated that GPUs often
+                provide better performance-per-watt ratios compared to CPUs for various parallel computing tasks, making
+                them a more energy-efficient option in such situations. However, the energy efficiency of GPUs can be
+                affected by factors including programming models, memory access patterns, and the degree of parallelism
+                present in the application.
             </p>
-            <h5>3.2 GPU Resource Sharing and Virtualization on High Performance Computing Systems
-            </h5>
-            <p>Desktop virtualization is a popular technology that enables users to access their desktops from any
-                location, regardless of the physical location of the desktop hardware. However, the performance of
-                desktop virtualization can be limited due to the lack of dedicated hardware resources, such as graphics
-                processing units (GPUs), which are essential for running graphics-intensive applications. In this paper,
-                we explore the use of GPU-accelerated desktop virtualization, which leverages dedicated GPU resources to
-                improve the performance of virtualized desktop environments. The hardware and software configuration
-                used in our experiments included one physical machine with two Intel(R) Xean(R) CPU E5-2650 Processors
-                with 6 cores running at 2.3GHz, 64GB of memory, and NVIDIA grid K2 for our GPU. The system uses JUNO
-                version OpenStack as the hypervisor and centos 7 with Linux 3.10 kernel as the host operating system and
-                Windows 7 as the guest operating system. The desktop transmission protocol used was SPICE. Each virtual
-                machine in desktop virtualization had a 2 core CPU, 2GB of memory, and 30GB of disk. The host disk
-                redundant array was RAID 5. The HD video size was 1920 *1080. Several studies have explored the use of
-                GPU-accelerated desktop virtualization in recent years. One study by Huang et al. (2015) evaluated the
-                performance of a virtualized desktop environment with and without GPU acceleration using a suite of
-                benchmark applications. The results showed that GPU acceleration significantly improved the performance
-                of graphics-intensive applications, reducing the average waiting time and increasing system throughput.
 
-            </p>
-            <p>Similarly, another study by Liu et al. (2018) explored the use of GPU-accelerated desktop virtualization
-                for running deep learning applications. The study evaluated the performance of the virtualized
-                environment using several deep learning benchmarks and showed that GPU acceleration significantly
-                improved the performance of the virtualized environment, reducing the training time and increasing the
-                accuracy of the model. Another study by Yuan et al. (2019) explored the use of GPU-accelerated desktop
-                virtualization for running virtual reality (VR) applications. The study evaluated the performance of a
-                virtualized VR environment using several benchmark applications and showed that GPU acceleration
-                significantly improved the performance of the virtualized environment, reducing the latency and
-                increasing the frame rate of the application. Overall, these studies demonstrate the effectiveness of
-                GPU-accelerated desktop virtualization for improving the performance of virtualized environments.
-                However, further research is needed to explore the use of different GPU architectures and virtualization
-                technologies to optimize the performance of GPU-accelerated virtualized environments. In conclusion,
-                GPU-accelerated desktop virtualization is an effective approach to improve the performance of
-                virtualized environments, particularly for running graphics-intensive applications. Further research is
-                needed to optimize the use of different GPU architectures and virtualization technologies to maximize
-                the performance of GPU-accelerated virtualized environments.
 
-            </p>
-            <h5>3.3 GPU acceleration for the web browser based evolutionary computing system
-            </h5>
-            <p>Grid and cloud computing have become more and more popular alternatives to very expensive supercomputers
-                or dedicated computing clusters because of their ability to utilize heterogeneous machines with
-                different internal architectures. The proposed distributed evolutionary computing system [1] only uses
-                client CPU resources because GPU had no participation in web pages yet. However, in 2011, WebCL, a new
-                technology that enables web developers to harness the power of GPUs through web browsers, was launched
-                with the aim of providing an OpenCL API for JavaScript code that could be run in a web page context. The
-                introduction of GPGPU programming platforms like Compute Unified Device Architecture (CUDA) or Open
-                Computing Language has also made it feasible for GPUs to be extensively used for computing purposes. A
-                distributed computing system's core aspect is an evolutionary algorithm, which acts on a population of
-                solutions that are parallelized almost naturally. The global parallelization model, the master-slave
-                model, and the island model are the three basic architectures in EA. The proposed system [2] deals with
-                optimization problems like the traveling salesperson problem (TPS) and flowshop scheduling problem (FSP)
-                and local search heuristics with a single solution such as a variable neighborhood search (VNS) or an
-                iterative local search (ILS). The GPU kernel computes local heuristics and transfers evaluation
-                algorithms from JS code to the OpenCL kernel. Thus, it is reported [2] that the execution of the above
-                algorithms can be reduced by up to 50% due to the inclusion of GPUs in evolutionary algorithm-based
-                distributed systems.
-
-            </p>
         </section>
-        <section id="methodology" class="section-padding">
-            <h2>Methodology</h2>
-            <p>Your methodology content goes here.</p>
-        </section>
+
+
+
+
         <section id="architecture" class="section-padding">
-            <h2>General Architecture of GPU</h2>
-            <p>Architecture of Nvidia Geoforce GTX 980 <br >
-                <img src="gen_gpu.png"  width=40% class="center">
-                <br/> Image source: [Aamodt el at. 2018]
-            
+            <h2>GPU ARCHITECTURE </h2>
+            <img src="/img/5.png" alt="IGPU"
+                style="display: block; margin-left: auto; margin-right: auto; width: auto;">
+            <p>The architecture of a GPU includes various components designed to enable efficient processing of
+                computationally intensive tasks such as graphics rendering and scientific simulations. The GPU's
+                processing power is harnessed through the use of multiple cores, which can each execute a
+                single-instruction multiple-thread (SIMT) program. These cores are capable of running thousands of
+                threads simultaneously and can communicate with each other through scratchpad memory and barrier
+                operations. Additionally, each core has its own first-level instruction and data caches, which serve to
+                reduce memory system traffic. The large number of threads running on each core helps to compensate for
+                the latency involved in accessing memory when data is not found in the first-level caches. (Aamodt el
+                at. 2018). </p>
+            <h4><b>Streaming Multiprocessors (SMs) </b></h4>
+            <p></p>
+
+            <h4><b>Memory </b></h4>
+            <p>GPUs typically have their own dedicated memory (VRAM) that is used to store data and instructions for
+                processing. The amount of memory can vary depending on the GPU model. </p>
+            <h4><b>Memory Controller </b></h4>
+            <p>The memory controller is responsible for managing the flow of data between the GPU's memory and the
+                processing units. </p>
+            <h4><b>Texture Mapping Units (TMUs)</b></h4>
+            <p>TMUs are responsible for mapping textures onto 3D objects in a scene. </p>
+            <h4><b>Raster Operations Pipeline (ROP)</b></h4>
+            <p>The ROP is responsible for finalizing the rendering process by processing pixel data and generating
+                output images. </p>
+            <h4><b>Compute Capability </b></h4>
+            <p>Modern GPUs are capable of performing more than just graphics rendering and are often used for
+                general-purpose computing tasks such as machine learning and scientific simulations. The computing
+                capability of a GPU refers to its ability to perform these types of calculations.</p>
+            <h4><b>Bus Interface </b></h4>
+            <p>The bus interface is responsible for communicating with the CPU and other components in the system,
+                allowing data to be transferred to and from the GPU.</p>
+
+            <h4>2.1 SIMT CORE </h4>
+            <img src="/img/6.png" alt="IGPU"
+                style="display: block; margin-left: auto; margin-right: auto; width: auto;">
+            <p>In order to optimize performance, GPUs organize threads into groups known as warps or wave fronts by
+                NVIDIA and AMD, respectively. These warps represent the unit of scheduling, with the hardware selecting
+                a warp for scheduling during each cycle. Using the one-loop approximation, the program counter of the
+                selected warp is used to access instruction memory and find the next instruction to execute. Once the
+                instruction is fetched, it is decoded and source operand registers are fetched from the register file.
+                The SIMT execution mask values are determined in parallel with fetching source operands from the
+                register file. Execution proceeds in a single-instruction, multiple-data manner with each thread
+                executing on the functional unit associated with a lane provided the SIMT execution mask is set. GPUs
+                may contain several function units, each supporting only a subset of instructions. To achieve higher
+                performance per unit area, some GPUs execute a single warp or wave front over several clock cycles by
+                clocking the function units at a higher frequency. When scheduling a large number of warps, it can be
+                difficult to keep track of each state and requires a significant number of registers. To address this
+                issue, the number of warps can be decreased, and the number of instructions scheduled from the same warp
+                can be increased. A scoreboard is used to keep track of dependencies, which helps remove any potential
+                conflicts that may arise from reading operands from the same register bank. To avoid stalls and optimize
+                throughput, instructions may be replayed and kept in the instruction buffer until at least some part of
+                the instruction is completed. Read barriers are also utilized to prevent hazards, and overlap between
+                register banks can be used to avoid conflicts when reading operands from the same bank (Aamodt el at.
+                2018). </p>
+
+            <h4>2.2 Architecture of Nvidia GeForce GTX 980 </h4>
+            <p></p>
+            <img src="/img/7.png" alt="IGPU"
+                style="display: block; margin-left: auto; margin-right: auto; width: auto;">
+            <p>The GTX 980 is based on Nvidia's Maxwell architecture, which is designed to be powerefficient while still
+                delivering high performance. It has 2048 CUDA cores, which are used for the parallel processing of
+                graphics and other computations. In total it has 4 memory controllers each attached to a graphic
+                processing cluster. Each cluster has 4 SMMs, in total it has 16 SMSs. In SMMs, each SMM has its own
+                I-buffer and warp scheduler, register file, and dispatch units. One SMM consists of 128 cores which are
+                divided into 4 blocks. Along with this, it has a Load/Store unit and SFUs. The GTX 980 has a base clock
+                speed of 1126 MHz, which can be boosted to 1216 MHz under load. It also has 4 GB of GDDR5 memory with a
+                256-bit memory interface, providing a maximum bandwidth of 224 GB/s. </p>
+            <p>One of the key features of the Maxwell architecture is the use of dynamic parallelism, which allows the
+                GPU to create and launch new threads on the fly, without having to return to the CPU. This allows for
+                more efficient processing of complex tasks, such as physics simulations or artificial intelligence
+                algorithms.
+                The GTX 980 also includes Nvidia's VXGI (Voxel Global Illumination) technology, which enables real-time
+                global illumination and dynamic reflections in games. It also supports Nvidia's G-Sync technology, which
+                synchronizes the refresh rate of the monitor with the output of the GPU, eliminating screen tearing and
+                reducing input lag. In terms of power consumption, the GTX 980 has a TDP (thermal design power) of 165
+                watts, which is relatively low compared to previous high-end graphics cards. This is partly due to the
+                use of Nvidia's MFAA (Multi-Frame AntiAliasing) technology, which provides improved image quality with
+                less processing power than traditional anti-aliasing techniques (NVIDIA., 2014).
             </p>
-            <p>
-                The architecture of a GPU includes various components designed to enable efficient processing of computationally intensive tasks such as graphics rendering and scientific simulations. The GPU's processing power is harnessed through the use of multiple cores, which can each execute a single-instruction multiple-thread (SIMT) program. These cores are capable of running thousands of threads simultaneously and can communicate with each other through scratchpad memory and barrier operations. Additionally, each core has its own first-level instruction and data caches, which serve to reduce memory system traffic. The large number of threads running on each core helps to compensate for the latency involved in accessing memory when data is not found in the first-level caches[Aamodt el at. 2018].
-
-            </p>
-            <p> 
-                In general, in a generic GPU architecture, a GPU has multiple SIMT( single instruction multiple threads) clusters, each cluster is mapped to a particular region in the memory and each cluster has numerous SMMs. some common components that are typically included:
-
-Streaming Multiprocessors (SMs): SMs are the main processing units within a GPU. Each SM typically contains multiple CUDA cores (or equivalent) that can perform calculations in parallel. The number of SMs can vary depending on the GPU model.
-
-Memory: GPUs typically have their own dedicated memory (VRAM) that is used to store data and instructions for processing. The amount of memory can vary depending on the GPU model.
-
-Memory Controller: The memory controller is responsible for managing the flow of data between the GPU's memory and the processing units.
-
-Texture Mapping Units (TMUs): TMUs are responsible for mapping textures onto 3D objects in a scene.
-
-Raster Operations Pipeline (ROP): The ROP is responsible for finalizing the rendering process by processing pixel data and generating output images.
-
-Compute Capability: Modern GPUs are capable of performing more than just graphics rendering and are often used for general-purpose computing tasks such as machine learning and scientific simulations. The computing capability of a GPU refers to its ability to perform these types of calculations.
-
-Bus Interface: The bus interface is responsible for communicating with the CPU and other components in the system, allowing data to be transferred to and from the GPU.
-
-            </p>
-
-    <p>
-        SIMT CORE:
-
-
-    </p>
-    <p>
-         <img src="SIMT_core.png"  width=40% class="center">
-                <br/> image source: [Aamodt el at. 2018]
-
-            
-           
-    </p>
-
-    <p>
-        In order to optimize performance, GPUs organize threads into groups known as "warps" or "wavefronts" by NVIDIA and AMD, respectively. These warps represent the unit of scheduling, with the hardware selecting a warp for scheduling during each cycle. Using the one-loop approximation, the program counter of the selected warp is used to access instruction memory and find the next instruction to execute. Once the instruction is fetched, it is decoded and source operand registers are fetched from the register file. The SIMT execution mask values are determined in parallel with fetching source operands from the register file. Execution proceeds in a single-instruction, multiple-data manner with each thread executing on the functional unit associated with a lane provided the SIMT execution mask is set. GPUs may contain several function units, each supporting only a subset of instructions. To achieve higher performance per unit area, some GPUs execute a single warp or wavefront over several clock cycles by clocking the function units at a higher frequency [Aamodt el at. 2018].
-
-    </p>
-
-    <p> 
-
-When scheduling a large number of warps, it can be difficult to keep track of each state and requires a significant number of registers. To address this issue, the number of warps can be decreased, and the number of instructions scheduled from the same warp can be increased. A scoreboard is used to keep track of dependencies, which helps remove any potential conflicts that may arise from reading operands from the same register bank. To avoid stalls and optimize throughput, instructions may be replayed and kept in the instruction buffer until at least some part of the instruction is completed. Read barriers are also utilized to prevent hazards, and overlap between register banks can be used to avoid conflicts when reading operands from the same bank [Aamodt el at. 2018].
-
-    </p>
         </section>
 
-        <section id="results" class="section-padding">
-            <h2>NVIDIA Geoforce GTX 980
-            </h2>
-            <p>Architecture of Nvidia Geoforce GTX 980 <br >
-                <img src="nvidia_980.png"  width=40% class="center">
-                <br/> Source: NVIDIA., 2014.
-            
+        <section id="latest-gpu" class="section-padding">
+
+            <h2>LATEST GPU NVIDIA H100 </h2>
+            <h4>3.1 NVIDIA </h4>
+            <p>NVIDIA has been a pioneer in the field of GPU accelerators and has contributed significantly to the
+                development and adoption of GPU computing. They offer a wide range of GPU accelerators tailored for
+                various applications, including high-performance computing, artificial intelligence, and gaming. </p>
+            <h4>3.1.1 CUDA Architecture </h4>
+            <p>The Compute Unified Device Architecture (CUDA) is a parallel computing platform and programming model
+                developed by NVIDIA for general-purpose GPU computing. CUDA allows developers to harness the parallel
+                processing capabilities of NVIDIA GPUs using a C-like programming language. The architecture consists of
+                an array of streaming multiprocessors (SMs) that contain a set of scalar processors (SPs), each capable
+                of executing multiple threads concurrently (Gupta et al., 2012). </p>
+            <img src="/img/8.png" alt="IGPU"
+                style="display: block; margin-left: auto; margin-right: auto; width: auto;">
+            <p>In a CUDA-enabled GPU, threads are organized into thread blocks, which are then distributed among SMs.
+                Each SM manages the scheduling and execution of its threads, as well as the local memory and registers
+                for its assigned thread blocks. This hierarchical structure allows for efficient parallel processing,
+                leveraging the immense computational capabilities of modern GPUs for a wide range of applications,
+                including high-performance computing, artificial intelligence, and scientific simulations. </p>
+
+
+            <h4>3.1.2. A100 GPU Accelerator </h4>
+            <img src="/img/9.png" alt="IGPU"
+                style="display: block; margin-left: auto; margin-right: auto; width: auto;">
+            <p>The A100 GPU accelerator is based on NVIDIA's Ampere architecture, which is designed to deliver
+                significant improvements in performance, energy efficiency, and scalability for a wide range of
+                workloads, including artificial intelligence, deep learning, and high-performance computing.
+                The A100 GPU features several technical innovations that contribute to its impressive performance
             </p>
-            <p>
-                The GTX 980 is based on Nvidia's Maxwell architecture, which is designed to be power-efficient while still delivering high performance. It has 2048 CUDA cores, which are used for the parallel processing of graphics and other computations.
-In total it has 4 memory controllers each attached to a graphic processing cluster.
-Each cluster has 4 SMMs, in total it has 16 SMSs. In SMMs, each SMM has its own I-buffer and warp scheduler, register file, and dispatch units. One SMM consists of 128 cores which are divided into 4 blocks. Along with this, it has a Load/Store unit and SFUs  [ NVIDIA., 2014]. 
+            <h4><b>Third-generation Tensor Cores </b></h4>
+            <p>These specialized hardware components provide high-performance AI and deep learning computations,
+                enabling faster training and inference times for large neural networks. They support mixed-precision
+                arithmetic, allowing developers to use lowerprecision data types without compromising model accuracy
+                (NVIDIA, 2020). </p>
+            <h4><b>Multi-Instance GPU (MIG) </b></h4>
+            <p>MIG technology enables the A100 GPU to be partitioned into multiple independent instances, each with
+                dedicated resources, to optimize resource utilization and performance. This feature is particularly
+                beneficial for data center and cloud environments, where multiple users and workloads share the same GPU
+                resources (NVIDIA, 2020). </p>
+            <h4><b>Enhanced memory architecture </b></h4>
+            <p>The A100 GPU incorporates a high-bandwidth memory (HBM2) architecture, providing a substantial increase
+                in memory bandwidth and capacity compared to previous generations. This improvement enables the A100 to
+                handle larger datasets and more complex workloads with ease. </p>
+
+            <img src="/img/10.png" alt="IGPU"
+                style="display: block; margin-left: auto; margin-right: auto; width: auto;">
+
+            <h4>A100 GPU Accelerator Applications </h4>
+            <p>The A100 GPU accelerator's exceptional performance and scalability make it wellsuited for various
+                applications across different industries. Some notable use cases include: </p>
+
+            <h4><b>Deep learning: </b></h4>
+            <p>The A100's third-generation Tensor Cores enable faster training and inference of deep learning models,
+                which are widely used in image and speech recognition, natural language processing, and recommendation
+                systems (NVIDIA, 2020). </p>
+            <h4><b>High-performance computing (HPC) </b></h4>
+            <p>The A100 GPU's high computational power and memory bandwidth make it an ideal choice for HPC workloads,
+                such as fluid dynamics simulations, molecular modeling, and climate research (NVIDIA, 2020).
+
+            </p>
+            <h4><b>Data analytics </b></h4>
+            <p>The A100's advanced memory architecture allows it to handle large datasets and perform complex
+                calculations, making it suitable for big data processing and analytics tasks in areas like finance,
+                healthcare, and marketing. </p>
+
+            <h3>3.1.3. H100 GPU Accelerator </h3>
+            <p>The H100 GPU accelerator is based on NVIDIA's Hopper architecture, which further enhances performance and
+                efficiency for high-performance computing and AI workloads. </p>
+            <img src="/img/11.png" alt="IGPU"
+                style="display: block; margin-left: auto; margin-right: auto; width: auto;">
+            <p>Some key technical features of the H100 GPU include: </p>
+
+            <h4><b>Fourth-generation Tensor Cores </b></h4>
+            <p>The H100 GPU incorporates the latest generation of Tensor Cores, which deliver higher throughput for AI
+                and deep learning tasks compared to the third-generation Tensor Cores found in the A100 GPU. This
+                improvement results in faster training and inference times for a variety of AI workloads. </p>
+            <h4><b>Sparsity Engine </b></h4>
+            <p>The H100 GPU introduces a new Sparsity engine, which is designed to accelerate inference workloads with
+                sparse neural networks. By exploiting the inherent sparsity in many AI models, the Sparsity engine can
+                deliver significant performance improvements for inference tasks (NVIDIA, 2022). </p>
+            <h4><b>Advanced memory architecture </b></h4>
+            <p>The H100 GPU features HBM3 memory technology, providing even higher memory bandwidth and capacity than
+                the A100 GPU. This improvement allows the H100 to handle even larger datasets and more complex workloads
+                with ease. </p>
+
+            <h4>H100 GPU Accelerator Applications </h4>
+            <p>The H100 GPU accelerator builds upon the capabilities of the A100 GPU and offers further performance
+                improvements, making it suitable for even more demanding workloads.
+                Some applications for the H100 GPU include:
             </p>
 
-            <p>
-                The GTX 980 has a base clock speed of 1126 MHz, which can be boosted to 1216 MHz under load. It also has 4 GB of GDDR5 memory with a 256-bit memory interface, providing a maximum bandwidth of 224 GB/s  [ NVIDIA., 2014].
+            <h4><b>AI and deep learning </b></h4>
+            <p>The H100's fourth-generation Tensor Cores and Sparsity engine provide even greater throughput for AI and
+                deep learning tasks, allowing faster training and inference times for various AI workloads</p>
+            <h4><b>Advanced HPC </b></h4>
+            <p>The H100 GPU's increased computational power and memory bandwidth make it an ideal choice for more
+                complex HPC workloads, such as large-scale simulations, quantum chemistry, and astrophysics research
+                (NVIDIA, 2022). </p>
+            <h4><b>Real-time analytics </b></h4>
+            <p>The H100's advanced memory architecture and high throughput capabilities enable it to process large
+                datasets in real-time, making it suitable for applications like fraud detection, cybersecurity, and
+                smart city management. </p>
+
+            <p>In summary, both the A100 and H100 GPU accelerators offer impressive performance and scalability for a
+                wide range of applications in artificial intelligence, high-performance computing, and data analytics.
+                Their advanced architectures, featuring Tensor Cores, Sparsity engines, and cutting-edge memory
+                technologies, provide the necessary computational power and flexibility to meet the demands of modern
+                workloads across various industries. </p>
+
+            <h4>3.1.4. Performance of A100 and H100 GPU Accelerators </h4>
+            <img src="/img/12.png" alt="IGPU"
+                style="display: block; margin-left: auto; margin-right: auto; width: auto;">
+            <p>The A100 cluster utilizes HDR InfiniBand network, while the H100 cluster employs NDR InfiniBand network
+                with the NVLink Switch System where indicated. The number of GPUs used varies for different workloads
+                (NVIDIA Developer, 2022).
+                During GTC Spring 2022, NVIDIA introduced the Grace Hopper Superchip product. The Hopper H100 Tensor
+                Core GPU will power the Grace Hopper Superchip CPU+GPU architecture, specifically designed for
+                terabyte-scale accelerated computing, delivering 10x greater performance on large-model AI and HPC
+                applications.
+            </p>
+            <p>The Grace Hopper Superchip takes advantage of the versatility of the Arm architecture to create a CPU and
+                server architecture purpose-built for accelerated computing. The H100 GPU is connected to the NVIDIA
+                Grace CPU through a high-speed NVIDIA chip-to-chip interconnect, providing 900 GB/s of total bandwidth,
+                which is seven times faster than PCIe Gen5. This cuttingedge design offers up to 30x higher aggregate
+                bandwidth compared to the fastest servers available today and up to 10x greater performance for
+                applications that process terabytes of data (NVIDIA Developer, 2022). </p>
 
 
-One of the key features of the Maxwell architecture is the use of dynamic parallelism, which allows the GPU to create and launch new threads on the fly, without having to return to the CPU. This allows for more efficient processing of complex tasks, such as physics simulations or artificial intelligence algorithms  [ NVIDIA., 2014]. </p>
-
-<p> The GTX 980 also includes Nvidia's VXGI (Voxel Global Illumination) technology, which enables real-time global illumination and dynamic reflections in games. It also supports Nvidia's G-Sync technology, which synchronizes the refresh rate of the monitor with the output of the GPU, eliminating screen tearing and reducing input lag  [ NVIDIA., 2014].
-
-    In terms of power consumption, the GTX 980 has a TDP (thermal design power) of 165 watts, which is relatively low compared to previous high-end graphics cards. This is partly due to the use of Nvidia's "MFAA" (Multi-Frame Anti-Aliasing) technology, which provides improved image quality with less processing power than traditional anti-aliasing techniques  [ NVIDIA., 2014].
-    </p>
         </section>
-        <section id="conclusion" class="section-padding">
-            <h2>Case study : Apache Spark 3.0</h2>
-            <p>
-                <img src="spark_1.png"  width=40% class="center">
-                
-           <br /> Source : NVIDIA., 2023.</p>
-            
-            <p> Apache Spark is an open-source distributed computing system that enables the processing of large-scale data sets. With the introduction of Spark 3.0, the system now supports GPU acceleration, which significantly boosts the performance of machine learning tasks. Spark's new GPU support leverages the power of GPUs to speed up the training and inference of machine learning models. GPUs excel at performing matrix operations, which are critical for many machine-learning algorithms[ NVIDIA., 2023]. </p>
-            <p>To provide GPU support, Spark 3.0 includes the CUDA-based Spark Accelerator for Apache Arrow or cuDF. cuDF is a GPU DataFrame library that provides a Pandas-like API for working with data on the GPU. It enables data scientists and engineers to take advantage of the parallel processing capabilities of the GPU to speed up data manipulation and preprocessing tasks, such as joining, filtering, and aggregating. In addition to cuDF, Spark 3.0 also includes GPU-accelerated MLlib algorithms for common machine learning tasks, such as linear regression, logistic regression, and k-means clustering [ NVIDIA., 2023].  </p>
-       
-            <p>A typical data science problem follows these steps in its data pipeline path. Collecting the data, extracting the data, and loading the data into the database. Storing the data in the structured data store. Then it follows these steps in data training, data preparation, model training, and evaluating the model and inference from the data. Between each step, there is a time delay because this pipeline is divided into multiple stages and it has very high latency due to stalls between each step [ NVIDIA., 2023].
+
+        <section id="case-study" class="section-padding">
+            <h2>CASE STUDY </h2>
+            <h4>Apache spark 3.0 </h4>
+            <p>Apache Spark is an open-source distributed computing system that enables the processing of large-scale
+                data sets. With the introduction of Spark 3.0, the system now supports GPU acceleration, which
+                significantly boosts the performance of machine learning tasks. Spark's new GPU support leverages the
+                power of GPUs to speed up the training and inference of machine learning models. GPUs excel at
+                performing matrix operations, which are critical for many machine-learning algorithms. </p>
+
+            <img src="/img/13.png" alt="IGPU"
+                style="display: block; margin-left: auto; margin-right: auto; width: auto;">
+
+            <p>To provide GPU support, Spark 3.0 includes the CUDA-based Spark Accelerator for Apache Arrow or cuDF.
+                cuDF is a GPU DataFrame library that provides a Pandas-like API for working with data on the GPU. It
+                enables data scientists and engineers to take advantage of the parallel processing capabilities of the
+                GPU to speed up data manipulation and preprocessing tasks, such as joining, filtering, and aggregating.
+                In addition to cuDF, Spark 3.0 also includes GPUaccelerated MLlib algorithms for common machine learning
+                tasks, such as linear regression, logistic regression, and k-means clustering.
+                A typical data science problem follows these steps in its data pipeline path. Collecting the data,
+                extracting the data, and loading the data into the database. Storing the data in the structured data
+                store. Then it follows these steps in data training, data preparation, model training, and evaluating
+                the model and inference from the data. Between each step, there is a time delay because this pipeline is
+                divided into multiple stages and it has very high latency due to stalls between each step.
             </p>
-            <p> To eliminate these stalls, in apache spark 3.0, all the steps in the data pipeline are integrated into a single data pipeline. From collecting data to deploying data can be automated in a single pipeline which reduces latencies [ NVIDIA., 2023]. 
+            <p>To eliminate these stalls, in apache spark 3.0, all the steps in the data pipeline are integrated into a
+                single data pipeline. From collecting data to deploying data can be automated in a single pipeline which
+                reduces latencies.
+                The main advantage of apache spark 3.0 is it has added support for GPU acceleration through RAPIDS, a
+                bundle of open-source software libraries developed by NVIDIA to enable GPU acceleration for data
+                processing and machine learning workloads. With RAPIDS, Spark can take advantage of GPUs to accelerate
+                data processing and machine learning tasks. This is achieved by offloading compute-intensive tasks to
+                the GPU, which can perform computations in parallel, leading to significant performance gains.
+            </p>
 
-                The main advantage of apache spark 3.0 is it has added support for GPU acceleration through RAPIDS, a bundle of open-source software libraries developed by NVIDIA to enable GPU acceleration for data processing and machine learning workloads. With RAPIDS, Spark can take advantage of GPUs to accelerate data processing and machine learning tasks. This is achieved by offloading compute-intensive tasks to the GPU, which can perform computations in parallel, leading to significant performance gains [ NVIDIA., 2023].
-                
-                RAPIDS integrates with Spark through the use of Spark plugins, which enable users to take advantage of GPU acceleration without modifying their Spark code. With the RAPIDS plugin, Spark can leverage the power of GPUs to accelerate data processing and machine learning workloads, including ETL, SQL queries, and machine learning algorithms. One of the key benefits of using RAPIDS with Spark is the ability to process large volumes of data much faster than traditional CPU-based systems. This is particularly important for use cases that require processing large amounts of data in near real-time, such as fraud detection, recommendation engines, and financial analytics [ NVIDIA., 2023].
-                
-                Through rapids, it is possible to achieve 50 to 100 times faster speed when compared to a data pipeline that involves HDFS read and disk operations.
-                And with a normal spark in-memory data pipeline it is possible to achieve 25 to 100 times faster speed for the same pipeline [ NVIDIA., 2023].</p>
+            <img src="/img/14.png" alt="IGPU"
+                style="display: block; margin-left: auto; margin-right: auto; width: auto;">
 
-            <p> 
-                <img src="spark_last.png"  width=40% class="center">
-                
-                <br/>  Source : NVIDIA., 2023.</p>
-            <p> Through rapids, it is possible to achieve 50 to 100 times faster speed when compared to a data pipeline that involves HDFS read and disk operations.
-                And with a normal spark in-memory data pipeline it is possible to achieve 25 to 100 times faster speed for the same pipeline [ NVIDIA., 2023].
-                </p>
-       
+            <p>RAPIDS integrate with Spark through the use of Spark plugins, which enable users to take advantage of GPU
+                acceleration without modifying their Spark code. With the RAPIDS plugin, Spark can leverage the power of
+                GPUs to accelerate data processing and machine learning workloads, including ETL, SQL queries, and
+                machine learning algorithms. One of the key benefits of using RAPIDS with Spark is the ability to
+                process large volumes of data much faster than traditional CPU-based systems. This is particularly
+                important for use cases that require processing large amounts of data in near real-time, such as fraud
+                detection, recommendation engines, and financial analytics.
+                Through rapids, it is possible to achieve 50 to 100 times faster speed when compared to a data pipeline
+                that involves HDFS read and disk operations and with a normal spark in-memory data pipeline it is
+                possible to achieve 25 to 100 times faster speed for the same pipeline (NVIDIA., 2023).
+            </p>
         </section>
+
+
 
         <section id="references" class="section-padding">
             <h2>References</h2>
-            <p>  Rogers, Aamodt.,  W. W. L., && T. M., Fung,  T. G. (2018). General-Purpose Graphics Processor Architectures. Book.</p>
+            <ol>
+                <li>Smith, R. (2015). 20 Years of PlayStation: A Retrospective. Retrieved from <a
+                        href="https://www.anandtech.com/show/9795/20-years-of-playstation-a-retrospective"
+                        target="_blank">https://www.anandtech.com/show/9795/20-years-of-playstation-a-retrospective</a>
+                </li>
+                <li>NVIDIA. (n.d.). GeForce 256: The First GPU. Retrieved from <a
+                        href="https://www.nvidia.com/en-us/geforce/20-series/"
+                        target="_blank">https://www.nvidia.com/en-us/geforce/20-series/</a></li>
+                <li>Hruska, J. (2006). NVIDIA Ships 500 Millionth GPU. Retrieved from <a
+                        href="https://www.extremetech.com/extreme/76208-nvidia-ships-500-millionth-gpu"
+                        target="_blank">https://www.extremetech.com/extreme/76208-nvidia-ships-500-millionth-gpu</a>
+                </li>
+                <li>Owens, J. D., Luebke, D., Govindaraju, N., Harris, M., Krüger, J., Lefohn, A. E., &amp; Purcell, T.
+                    J. (2008). A Survey of General-Purpose Computation on Graphics Hardware. Computer Graphics Forum,
+                    26(1), 80-113. doi:10.1111/j.1467-8659.2007.01103.x</li>
+                <li>Khronos Group. (2009). OpenCL - The Open Standard for Parallel Programming of Heterogeneous Systems.
+                    Retrieved from <a href="https://www.khronos.org/opencl/"
+                        target="_blank">https://www.khronos.org/opencl/</a></li>
+                <li>TOP500. (2020). TOP500 List - June 2020. Retrieved from <a
+                        href="https://www.top500.org/lists/top500/2020/06/"
+                        target="_blank">https://www.top500.org/lists/top500/2020/06/</a></li>
+                <li>Mittal, S., &amp; Vetter, J. S. (2015). A Survey of CPU-GPU Heterogeneous Computing Techniques. ACM
+                    Computing Surveys (CSUR), 47(4), 1-35. doi:10.1145/2788397</li>
+                <li>Yifan Sun, Nicolas Bohm Agostini, Shi Dong, and David Kaeli (2020). Summarizing CPU and GPU Design
+                    Trends with Product Data. <a href="https://doi.org/10.48550/arXiv.1911.11313"
+                        target="_blank">https://doi.org/10.48550/arXiv.1911.11313</a></li>
+                <li>Rogers, Aamodt., W. W. L., &amp; T. M., Fung, T. G. (2018). General-Purpose Graphics Processor
+                    Architectures. Book.</li>
+                <li>NVIDIA Corporation. (2014). NVIDIA Maxwell GM204 Architecture Whitepaper.Microway, Inc.<a
+                        href="https://www.microway.com/download/whitepaper/NVIDIA_Maxwell_GM204_Architecture_Whitepaper.pdf"
+                        target="_blank">https://www.microway.com/download/whitepaper/NVIDIA_Maxwell_GM204_Architecture_Whitepaper.pdf</a>
+                </li>
+                <li>Gupta, S., Agrawal, A., Gopalakrishnan, K., &amp; Narayanan, P. (2012). Deep Learning with Limited
+                    Numerical Precision. In International Conference on Machine Learning (pp. 1737-1746). Retrieved from
+                    <a href="https://www.researchgate.net/figure/High-level-overview-of-a-CUDA-GPU-architecture_fig1_274653719"
+                        target="_blank">https://www.researchgate.net/figure/High-level-overview-of-a-CUDA-GPU-architecture_fig1_274653719</a>
+                </li>
+                <li>NVIDIA. (2020). NVIDIA A100 Tensor Core GPU Architecture. Retrieved from <a
+                        href="https://www.nvidia.com/content/dam/en-zz/Solutions/Data-Center/nvidia-ampere-architecture-whitepaper.pdf"
+                        target="_blank">https://www.nvidia.com/content/dam/en-zz/Solutions/Data-Center/nvidia-ampere-architecture-whitepaper.pdf</a>
+                </li>
+                <li>NVIDIA. (2022). NVIDIA H100 Tensor Core GPU: Hopper Architecture. Retrieved from <a
+                        href="https://www.nvidia.com/content/dam/en-zz/Solutions/Data-Center/nvidia-hopper-architecture-whitepaper.pdf"
+                        target="_blank">https://www.nvidia.com/content/dam/en-zz/Solutions/Data-Center/nvidia-hopper-architecture-whitepaper.pdf</a>
+                </li>
+                <li>NVIDIA. (2023). NVIDIA Apache Spark™ 3.0.0 GPU Acceleration for Data Science. NVIDIA. <a
+                        href="https://www.nvidia.com/en-us/deep-learning-ai/solutions/data-science/apache-spark-3/"
+                        target="_blank">https://www.nvidia.com/en-us/deep-learning-ai/solutions/data-science/apache-spark-3/</a>
+                </li>
+            </ol>
 
 
-            <p>NVIDIA Corporation. (2014). NVIDIA Maxwell GM204 Architecture Whitepaper.Microway, Inc.https://www.microway.com/download/whitepaper/NVIDIA_Maxwell_GM204_Architecture_Whitepaper.pdf</p>
-
-            <p>
-NVIDIA. (2023). NVIDIA Apache Spark™ 3.0.0 GPU Acceleration for Data Science. NVIDIA. https://www.nvidia.com/en-us/deep-learning-ai/solutions/data-science/apache-spark-3/
-</p>
-            <p>[4] &nbsp; Hao Li, Roger Grosse, "Accelerating Deep Neural Networks on GPUs".</p>
-            <p>[5] &nbsp; Li Du,Yuan Du, "Hardware Accelerator Design for Machine Learning".
-            </p>
-            <p>[6] &nbsp; Teng Li, Vikram K. Narayana, Esam El-Araby, Tarek El-Ghazawi, “GPU Resource Sharing and
-                Virtualization on High Performance Computing Systems”, International &emsp; Conference on Parallel
-                Processing, 2011.</p>
-            <p>[7]&nbsp; Yaser Jararweh, Shadi AlZubi, Salim Hariri, “An Optimal Multi-Processor Allocation Algorithm
-                for High Performance GPU Accelerators”, IEEE Jordan Conference on Applied Electrical Engineering and
-                Computing Technologies,2011.</p>
-            <p>[8]&nbsp; Bin Liu, Dawid Zydek, Henry Selvaraj, Laxmi Gewali, “Accelerating High Performance Computing
-                Applications Using CPUs, GPUs, Hybrid CPU/GPU, and FPGAs”, 13th International Conference on Parallel and
-                Distributed Computing, Applications and Technologies, 2012.
-            </p>
-            <p>[9] &nbsp;Tergel Molom-Ochir, Rohan Shenoy, “Energy and Cost Considerations for GPU Accelerated AI
-                Inference Workloads”, IEEE Jordan Conference on Applied Electrical Engineering and Computing
-                Technologies, 2011.
-            </p>
-            </p>
         </section>
     </main>
     <footer>
-        <p>&copy; 2023 Project Report. All rights reserved.</p>
+        <p>&copy; 2023 ECE570 Report. All rights reserved.</p>
     </footer>
     <script src="scripts.js"></script>
 </body>
