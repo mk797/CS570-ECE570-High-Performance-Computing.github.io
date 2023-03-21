@@ -226,17 +226,36 @@
             <p>Your methodology content goes here.</p>
         </section>
         <section id="results" class="section-padding">
-            <h2>Nvidia Geoforce GTX 980
+            <h2>NVIDIA Geoforce GTX 980
             </h2>
-            <p>Your results content goes here.</p>
+            <p>Architecture of Nvidia Geoforce GTX 980 <br >
+                <img src="nvidia_980.png"  width=40% class="center">
+                <br/> Source: NVIDIA., 2014.
+            
+            </p>
+            <p>
+                The GTX 980 is based on Nvidia's Maxwell architecture, which is designed to be power-efficient while still delivering high performance. It has 2048 CUDA cores, which are used for the parallel processing of graphics and other computations.
+In total it has 4 memory controllers each attached to a graphic processing cluster.
+Each cluster has 4 SMMs, in total it has 16 SMSs. In SMMs, each SMM has its own I-buffer and warp scheduler, register file, and dispatch units. One SMM consists of 128 cores which are divided into 4 blocks. Along with this, it has a Load/Store unit and SFUs  [ NVIDIA., 2014]. 
+            </p>
+
+            <p>
+                The GTX 980 has a base clock speed of 1126 MHz, which can be boosted to 1216 MHz under load. It also has 4 GB of GDDR5 memory with a 256-bit memory interface, providing a maximum bandwidth of 224 GB/s  [ NVIDIA., 2014].
+
+
+One of the key features of the Maxwell architecture is the use of dynamic parallelism, which allows the GPU to create and launch new threads on the fly, without having to return to the CPU. This allows for more efficient processing of complex tasks, such as physics simulations or artificial intelligence algorithms  [ NVIDIA., 2014]. </p>
+
+<p> The GTX 980 also includes Nvidia's VXGI (Voxel Global Illumination) technology, which enables real-time global illumination and dynamic reflections in games. It also supports Nvidia's G-Sync technology, which synchronizes the refresh rate of the monitor with the output of the GPU, eliminating screen tearing and reducing input lag  [ NVIDIA., 2014].
+
+    In terms of power consumption, the GTX 980 has a TDP (thermal design power) of 165 watts, which is relatively low compared to previous high-end graphics cards. This is partly due to the use of Nvidia's "MFAA" (Multi-Frame Anti-Aliasing) technology, which provides improved image quality with less processing power than traditional anti-aliasing techniques  [ NVIDIA., 2014].
+    </p>
         </section>
         <section id="conclusion" class="section-padding">
             <h2>Case study : Apache Spark 3.0</h2>
             <p>
                 <img src="spark_1.png"  width=40% class="center">
                 
-            </p>
-            <p> Source : NVIDIA., 2023.</p>
+           <br /> Source : NVIDIA., 2023.</p>
             
             <p> Apache Spark is an open-source distributed computing system that enables the processing of large-scale data sets. With the introduction of Spark 3.0, the system now supports GPU acceleration, which significantly boosts the performance of machine learning tasks. Spark's new GPU support leverages the power of GPUs to speed up the training and inference of machine learning models. GPUs excel at performing matrix operations, which are critical for many machine-learning algorithms[ NVIDIA., 2023]. </p>
             <p>To provide GPU support, Spark 3.0 includes the CUDA-based Spark Accelerator for Apache Arrow or cuDF. cuDF is a GPU DataFrame library that provides a Pandas-like API for working with data on the GPU. It enables data scientists and engineers to take advantage of the parallel processing capabilities of the GPU to speed up data manipulation and preprocessing tasks, such as joining, filtering, and aggregating. In addition to cuDF, Spark 3.0 also includes GPU-accelerated MLlib algorithms for common machine learning tasks, such as linear regression, logistic regression, and k-means clustering [ NVIDIA., 2023].  </p>
@@ -254,8 +273,8 @@
 
             <p> 
                 <img src="spark_last.png"  width=40% class="center">
-            </p>    
-            <p> Source : NVIDIA., 2023.</p>
+                
+                <br/>  Source : NVIDIA., 2023.</p>
             <p> Through rapids, it is possible to achieve 50 to 100 times faster speed when compared to a data pipeline that involves HDFS read and disk operations.
                 And with a normal spark in-memory data pipeline it is possible to achieve 25 to 100 times faster speed for the same pipeline [ NVIDIA., 2023].
                 </p>
