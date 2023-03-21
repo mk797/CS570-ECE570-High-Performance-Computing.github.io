@@ -225,8 +225,8 @@
 
         <section id="architecture" class="section-padding">
             <h2>GPU ARCHITECTURE </h2>
-            <img src="5.png" alt="IGPU"
-                style="display: block; margin-left: auto; margin-right: auto; width: auto;"><br/>
+            <img src="gen_gpu.png" alt="IGPU"
+                style="display: block; margin-left: auto; margin-right: auto; width: 50%;"><br/>
             <p>The architecture of a GPU includes various components designed to enable efficient processing of
                 computationally intensive tasks such as graphics rendering and scientific simulations. The GPU's
                 processing power is harnessed through the use of multiple cores, which can each execute a
@@ -259,8 +259,8 @@
                 allowing data to be transferred to and from the GPU.</p>
 
             <h4>2.1 SIMT CORE </h4>
-            <img src="6.png" alt="IGPU"
-                style="display: block; margin-left: auto; margin-right: auto; width: auto;"><br/>
+            <img src="SIMT_core.png" alt="IGPU"
+                style="display: block; margin-left: auto; margin-right: auto; width: 50%;"><br/>
             <p>In order to optimize performance, GPUs organize threads into groups known as warps or wave fronts by
                 NVIDIA and AMD, respectively. These warps represent the unit of scheduling, with the hardware selecting
                 a warp for scheduling during each cycle. Using the one-loop approximation, the program counter of the
@@ -283,8 +283,8 @@
 
             <h4>2.2 Architecture of Nvidia GeForce GTX 980 </h4>
             <p></p>
-            <img src="7.png" alt="IGPU"
-                style="display: block; margin-left: auto; margin-right: auto; width: auto;"><br/>
+            <img src="nvidia_980.png" alt="IGPU"
+                style="display: block; margin-left: auto; margin-right: auto; width: 40%;"><br/>
             <p>The GTX 980 is based on Nvidia's Maxwell architecture, which is designed to be powerefficient while still
                 delivering high performance. It has 2048 CUDA cores, which are used for the parallel processing of
                 graphics and other computations. In total it has 4 memory controllers each attached to a graphic
@@ -447,9 +447,9 @@
                 power of GPUs to speed up the training and inference of machine learning models. GPUs excel at
                 performing matrix operations, which are critical for many machine-learning algorithms. </p>
 
-            <img src="13.png" alt="IGPU"
-                style="display: block; margin-left: auto; margin-right: auto; width: auto;">
-
+            <img src="spark_1.png" alt="IGPU"
+                style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+            <br />
             <p>To provide GPU support, Spark 3.0 includes the CUDA-based Spark Accelerator for Apache Arrow or cuDF.
                 cuDF is a GPU DataFrame library that provides a Pandas-like API for working with data on the GPU. It
                 enables data scientists and engineers to take advantage of the parallel processing capabilities of the
@@ -472,9 +472,9 @@
                 the GPU, which can perform computations in parallel, leading to significant performance gains.
             </p>
 
-            <img src="14.png" alt="IGPU"
-                style="display: block; margin-left: auto; margin-right: auto; width: auto;">
-
+            <img src="spark_last.png" alt="IGPU" 
+                style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+            <br />
             <p>RAPIDS integrate with Spark through the use of Spark plugins, which enable users to take advantage of GPU
                 acceleration without modifying their Spark code. With the RAPIDS plugin, Spark can leverage the power of
                 GPUs to accelerate data processing and machine learning workloads, including ETL, SQL queries, and
