@@ -48,8 +48,8 @@
                             Reports
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/mid Report.pdf" target="_blank">Mid Report</a>
-                            <a class="dropdown-item" href="/final REPORT.pdf" target="_blank">Full Report</a>
+                            <a class="dropdown-item" href="mid Report.pdf" target="_blank">Mid Report</a>
+                            <a class="dropdown-item" href="final REPORT.pdf" target="_blank">Full Report</a>
                         </div>
                     </li>
 
@@ -104,7 +104,7 @@
             <h3>1.2 Types of GPU Accelerators </h3>
             <h4>i. IGPU</h4>
             <img src="1.png" alt="IGPU"
-                style="display: block; margin-left: auto; margin-right: auto; width: auto;">
+                style="display: block; margin-left: auto; margin-right: auto; width: auto;"><br/>
             <p>An integrated GPU, or iGPU, is a graphics processing unit that is combined with the CPU on a single chip.
                 This type of GPU is built into the motherboard and is commonly found in ultra-thin devices such as
                 laptops and Intel® NUCs. The iGPU offers several advantages, including lower power consumption, which
@@ -115,7 +115,7 @@
                 on the capabilities of the other components within the system.</p>
             <h4>ii. DGPU</h4>
             <img src="2.png" alt="IGPU"
-                style="display: block; margin-left: auto; margin-right: auto; width: auto;">
+                style="display: block; margin-left: auto; margin-right: auto; width: auto;"><br/>
             <p>Discrete graphics refers to a GPU that is separate from the processor. As an independent component,
                 discrete graphics offer several advantages, including their own dedicated VRAM (video RAM or video
                 random access memory). However, they also consume more power and generate substantial heat. Discrete
@@ -180,7 +180,7 @@
                 while efficiently switching between application tasks. CPUs are typically designed for sequential
                 processing, excelling in a broad array of tasks and emphasizing singlethreaded performance. </p>
             <img src="3.png" alt="IGPU"
-                style="display: block; margin-left: auto; margin-right: auto; width: auto;">
+                style="display: block; margin-left: auto; margin-right: auto; width: auto;"><br/>
             <p>Conversely, a GPU boasts a significantly larger number of cores than a CPU, enabling it to process
                 thousands of threads simultaneously. The multitude of cores in a GPU allows it to fetch data from
                 memory, conduct parallel computations, and return the data for further use. GPUs are engineered for
@@ -200,7 +200,7 @@
                 GPUs is exponentially increasing and the FLOPS per watt doubles around every three to four years.
             </p>
             <img src="4.png" alt="IGPU"
-                style="display: block; margin-left: auto; margin-right: auto; width: auto;">
+                style="display: block; margin-left: auto; margin-right: auto; width: auto;"><br/>
             <h4>iii. Energy efficiency considerations </h4>
             <p>CPUs generally consume more power to achieve their goals, especially when handling diverse tasks.
                 However, for parallelizable tasks, CPUs may not be the most energy-efficient choice due to their limited
@@ -226,7 +226,7 @@
         <section id="architecture" class="section-padding">
             <h2>GPU ARCHITECTURE </h2>
             <img src="5.png" alt="IGPU"
-                style="display: block; margin-left: auto; margin-right: auto; width: auto;">
+                style="display: block; margin-left: auto; margin-right: auto; width: auto;"><br/>
             <p>The architecture of a GPU includes various components designed to enable efficient processing of
                 computationally intensive tasks such as graphics rendering and scientific simulations. The GPU's
                 processing power is harnessed through the use of multiple cores, which can each execute a
@@ -260,7 +260,7 @@
 
             <h4>2.1 SIMT CORE </h4>
             <img src="6.png" alt="IGPU"
-                style="display: block; margin-left: auto; margin-right: auto; width: auto;">
+                style="display: block; margin-left: auto; margin-right: auto; width: auto;"><br/>
             <p>In order to optimize performance, GPUs organize threads into groups known as warps or wave fronts by
                 NVIDIA and AMD, respectively. These warps represent the unit of scheduling, with the hardware selecting
                 a warp for scheduling during each cycle. Using the one-loop approximation, the program counter of the
@@ -284,7 +284,7 @@
             <h4>2.2 Architecture of Nvidia GeForce GTX 980 </h4>
             <p></p>
             <img src="7.png" alt="IGPU"
-                style="display: block; margin-left: auto; margin-right: auto; width: auto;">
+                style="display: block; margin-left: auto; margin-right: auto; width: auto;"><br/>
             <p>The GTX 980 is based on Nvidia's Maxwell architecture, which is designed to be powerefficient while still
                 delivering high performance. It has 2048 CUDA cores, which are used for the parallel processing of
                 graphics and other computations. In total it has 4 memory controllers each attached to a graphic
@@ -307,7 +307,7 @@
             </p>
         </section>
 
-        <section id="latest-gpu" class="section-padding">
+        <section id="latest-gpu" class="section-padding"><br/>
 
             <h2>LATEST GPU NVIDIA H100 </h2>
             <h4>3.1 NVIDIA </h4>
@@ -321,7 +321,7 @@
                 an array of streaming multiprocessors (SMs) that contain a set of scalar processors (SPs), each capable
                 of executing multiple threads concurrently (Gupta et al., 2012). </p>
             <img src="8.png" alt="IGPU"
-                style="display: block; margin-left: auto; margin-right: auto; width: auto;">
+                style="display: block; margin-left: auto; margin-right: auto; width: auto;"><br/>
             <p>In a CUDA-enabled GPU, threads are organized into thread blocks, which are then distributed among SMs.
                 Each SM manages the scheduling and execution of its threads, as well as the local memory and registers
                 for its assigned thread blocks. This hierarchical structure allows for efficient parallel processing,
@@ -331,7 +331,7 @@
 
             <h4>3.1.2. A100 GPU Accelerator </h4>
             <img src="9.png" alt="IGPU"
-                style="display: block; margin-left: auto; margin-right: auto; width: auto;">
+                style="display: block; margin-left: auto; margin-right: auto; width: auto;"><br/>
             <p>The A100 GPU accelerator is based on NVIDIA's Ampere architecture, which is designed to deliver
                 significant improvements in performance, energy efficiency, and scalability for a wide range of
                 workloads, including artificial intelligence, deep learning, and high-performance computing.
@@ -353,7 +353,7 @@
                 handle larger datasets and more complex workloads with ease. </p>
 
             <img src="10.png" alt="IGPU"
-                style="display: block; margin-left: auto; margin-right: auto; width: auto;">
+                style="display: block; margin-left: auto; margin-right: auto; width: auto;"><br/>
 
             <h4>A100 GPU Accelerator Applications </h4>
             <p>The A100 GPU accelerator's exceptional performance and scalability make it wellsuited for various
@@ -377,7 +377,7 @@
             <p>The H100 GPU accelerator is based on NVIDIA's Hopper architecture, which further enhances performance and
                 efficiency for high-performance computing and AI workloads. </p>
             <img src="11.png" alt="IGPU"
-                style="display: block; margin-left: auto; margin-right: auto; width: auto;">
+                style="display: block; margin-left: auto; margin-right: auto; width: auto;" > <br/>
             <p>Some key technical features of the H100 GPU include: </p>
 
             <h4><b>Fourth-generation Tensor Cores </b></h4>
